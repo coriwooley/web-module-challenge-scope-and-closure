@@ -28,11 +28,13 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
+  'count' is defined in counter1 and outside of counter2. 
   
   2. Which of the two uses a closure? How can you tell?
+  counter1 because it has to reach into the outer function to get the value of count.
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
-     counter2 be better?  
+     counter2 be better? counter1 would be better for reusing the code for mulitple things, and counter 2 would be good to keep count of one thing.  
 */
 
 // counter1 code
@@ -52,7 +54,6 @@ function counter2() {
   return count++;
 }
 
-
 /* ⚾️⚾️⚾️ Task 2: inning() ⚾️⚾️⚾️
 Use the inning function below to do the following:
   1. Return a random whole number of points between 0 and 2 scored by one team in an inning
@@ -62,9 +63,10 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
+function inning(){
+    return Math.floor(Math.random() * 3)
 }
+console.log(inning())
 
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
