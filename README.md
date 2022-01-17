@@ -61,6 +61,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+when a function created inside of a function has to get a value from the function it was created in. you can pass the value down to the function created inside the outer function.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -81,9 +82,9 @@ dansRoll();
 dansRoll();
 ```
 
-a. Where is closure used in this code? How can you tell?
-b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+a. Where is closure used in this code? How can you tell? When the inner function got the value 'name' from the outer function. the same code can be reused for two different values.
+b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change? name changes. the newRoll number value will be different.
+c. What is the lexical scope of `newRoll`? In the inner function
 
 
 ### Task 3 - Stretch Goals
